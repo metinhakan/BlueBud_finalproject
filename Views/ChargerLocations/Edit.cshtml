@@ -1,0 +1,51 @@
+@model BlueBud.Models.ChargerLocations
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>ChargerLocations</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group">
+                <label asp-for="ChargerName" class="control-label"></label>
+                <input asp-for="ChargerName" class="form-control" />
+                <span asp-validation-for="ChargerName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Latitude" class="control-label"></label>
+                <input asp-for="Latitude" class="form-control" />
+                <span asp-validation-for="Latitude" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Longitude" class="control-label"></label>
+                <input asp-for="Longitude" class="form-control" />
+                <span asp-validation-for="Longitude" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="OccupationStatus" class="control-label"></label>
+                <input asp-for="OccupationStatus" class="form-control" />
+                <span asp-validation-for="OccupationStatus" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ChargerType" class="control-label"></label>
+                <input asp-for="ChargerType" class="form-control" />
+                <span asp-validation-for="ChargerType" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+

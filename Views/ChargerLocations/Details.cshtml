@@ -1,0 +1,48 @@
+@model BlueBud.Models.ChargerLocations
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>ChargerLocations</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ChargerName)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ChargerName)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Latitude)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Latitude)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Longitude)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Longitude)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.OccupationStatus)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.OccupationStatus)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ChargerType)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ChargerType)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
